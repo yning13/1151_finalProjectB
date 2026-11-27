@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f4f6f0">
+  <title>食衡｜產品介面模擬</title>
+  <style>
+    :root{color-scheme:light;--ink:#19372f;--muted:#718079;--green:#286653;--line:#e5ebe4;--paper:#fbfcf9;--mint:#e6f1e8}
+    *{box-sizing:border-box}body{margin:0;background:#f3f5ef;color:var(--ink);font-family:Inter,"Noto Sans TC","Microsoft JhengHei",sans-serif}
+    .wrap{max-width:1340px;margin:0 auto;padding:44px 36px 56px}.eyebrow{font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:#58806c;font-weight:700}
+    h1{font-size:34px;letter-spacing:-.04em;margin:10px 0 8px;font-weight:750}.intro{margin:0;color:var(--muted);font-size:14px;line-height:1.8}.rule{height:1px;background:var(--line);margin:26px 0 24px}
+    .grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:22px;align-items:start}.card{padding:13px 13px 18px;border:1px solid #e7ece5;border-radius:24px;background:var(--paper);box-shadow:0 14px 34px #17382f0c}
+    .top{display:flex;justify-content:space-between;align-items:center;padding:5px 4px 12px}.step{font-size:10px;color:#688174;font-weight:700;letter-spacing:.13em}.open{font-size:11px;text-decoration:none;color:var(--green);font-weight:700}
+    .screen{display:block;width:100%;height:auto;border-radius:17px;background:#f6f7f3;box-shadow:0 2px 8px #102a2012}.caption{padding:15px 4px 0}.caption h2{font-size:15px;margin:0 0 5px;font-weight:750}.caption p{font-size:11px;line-height:1.7;color:var(--muted);margin:0}
+    footer{display:flex;justify-content:space-between;gap:16px;align-items:center;margin-top:24px;padding-top:16px;border-top:1px solid var(--line);font-size:10px;color:#7b8881}.brand{display:flex;align-items:center;gap:8px;font-weight:700;color:#486a58}.leaf{width:20px;height:20px;border-radius:8px;background:var(--mint);display:grid;place-items:center;color:var(--green);font-size:12px}
+    @media(max-width:900px){.wrap{padding:30px 22px}.grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+    @media(max-width:600px){.wrap{padding:25px 16px}.grid{grid-template-columns:1fr;gap:14px}h1{font-size:28px}.card{max-width:420px;width:100%;margin:0 auto}.intro{font-size:13px}footer{align-items:flex-start;flex-direction:column}}
+  </style>
+</head>
+<body>
+  <main class="wrap">
+    <div class="eyebrow">AI nutrition &amp; movement · product concept</div>
+    <h1>食衡，讓日常管理更輕鬆。</h1>
+    <p class="intro">依據系統規劃中的三項核心任務，設計一套可持續使用的飲食與運動管理體驗。<br>從每日攝取總覽，到 AI 餐點辨識確認，再到活動紀錄與每週回顧。</p>
+    <div class="rule"></div>
+    <section class="grid" aria-label="食衡產品介面模擬畫面">
+      <article class="card">
+        <div class="top"><span class="step">01 · TODAY</span><a class="open" href="01-today-overview.svg">開啟原尺寸 ↗</a></div>
+        <img class="screen" src="01-today-overview.svg" alt="食衡每日飲食與營養攝取總覽介面">
+        <div class="caption"><h2>今日總覽</h2><p>熱量與三大營養素目標、餐點摘要、運動紀錄和拍照入口集中在同一頁。</p></div>
+      </article>
+      <article class="card">
+        <div class="top"><span class="step">02 · MEAL SCAN</span><a class="open" href="02-ai-meal-review.svg">開啟原尺寸 ↗</a></div>
+        <img class="screen" src="02-ai-meal-review.svg" alt="AI 餐點辨識與份量調整確認介面">
+        <div class="caption"><h2>AI 餐點辨識</h2><p>拍照後檢視辨識食材、估算份量與營養；使用者可以先調整，再確認加入紀錄。</p></div>
+      </article>
+      <article class="card">
+        <div class="top"><span class="step">03 · ACTIVITY</span><a class="open" href="03-activity-log.svg">開啟原尺寸 ↗</a></div>
+        <img class="screen" src="03-activity-log.svg" alt="運動紀錄與每週活動摘要介面">
+        <div class="caption"><h2>運動與活動</h2><p>快速補登運動種類、時間與強度，同時查看每日活動消耗和每週完成情況。</p></div>
+      </article>
+    </section>
+    <footer><span class="brand"><span class="leaf">↗</span>食衡 · EAT WELL, MOVE WELL</span><span>畫面示意資料僅供介面展示；餐點熱量與份量皆為估算值。</span></footer>
+  </main>
+</body>
+</html>
